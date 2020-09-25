@@ -1,6 +1,6 @@
 <script>
-import BarChart from './components/BarChart.svelte'
-import { generateArrayRandomly } from './modules/functions.mjs'
+import BarChart from '../components/BarChart.svelte'
+import { generateArrayRandomly } from '../modules/functions.mjs'
 
 // Configuration
 const setLength = 50;
