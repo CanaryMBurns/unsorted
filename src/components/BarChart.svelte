@@ -22,5 +22,6 @@ let maxElementValue = Math.max(...set);
 .bar {
   flex: 1 1 0px;
   background-color: tomato;
+  margin: 0 5px;
 }
 </style>

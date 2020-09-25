@@ -15,15 +15,16 @@ export const getProportion = (value, maxValue) => {
 }
 
 export const swap = (arr, firstIndex, secondIndex) => {
-  let promise = new Promise((resolve, reject) => {
-    window.setTimeout(() => {
-      let temp = arr[firstIndex];
-      arr[firstIndex] = arr[secondIndex];
-      arr[secondIndex] = temp;
-      resolve()
-    }, 500);
+  return new Promise(resolve => {
+    window.requestAnimationFrame(function() {
+      setTimeout(() => {
+        let temp = arr[firstIndex];
+        arr[firstIndex] = arr[secondIndex];
+        arr[secondIndex] = temp;
+        resolve();
+      }, 250);
+    });
   });
-  return promise;
 }
 
 export const bubbleSort = async (arr) => {
@@ -33,8 +34,7 @@ export const bubbleSort = async (arr) => {
   for (i = 0; i < len; i++) {
     for (j = 0, stop = len - i; j < stop; j++) {
       if (arr[j] > arr[j + 1]) {
-        const result = await swap(arr, j, j + 1);
-        console.log(arr)
+        await swap(arr, j, j + 1);
       }
     }
   }
