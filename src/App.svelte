@@ -1,8 +1,13 @@
 <script>
 import BarChart from './components/BarChart.svelte'
+import { generateArrayRandomly } from './modules/functions.mjs'
 
 // Configuration
-let set = [1, 2, 3];
+const setLength = 10;
+const setMinValue = 1;
+const setMaxValue = 100;
+
+let set = generateArrayRandomly(setLength, setMinValue, setMaxValue);
 </script>
 
 <main class="main">
