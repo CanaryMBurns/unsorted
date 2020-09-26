@@ -9,3 +9,9 @@ body  {
 	height: 100vh;
 	background-color: #333333;
 }
+
+#sapper,
+main {
+	width: 100%;
+	height: 100%;
+}

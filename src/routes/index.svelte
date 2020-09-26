@@ -13,15 +13,13 @@ bubbleSort()
 
 // Bubble sort
 function swap(firstIndex, secondIndex) {
-  return new Promise(resolve => {
-    window.requestAnimationFrame(function() {
-      setTimeout(() => {
-        let temp = set[firstIndex];
-        set[firstIndex] = set[secondIndex];
-        set[secondIndex] = temp;
-        resolve();
-      }, delay);
-    });
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let temp = set[firstIndex];
+      set[firstIndex] = set[secondIndex];
+      set[secondIndex] = temp;
+      resolve();      
+    }, delay);
   });
 }
 
@@ -32,7 +30,11 @@ async function bubbleSort () {
   for (i = 0; i < len; i++) {
     for (j = 0, stop = len - i; j < stop; j++) {
       if (set[j] > set[j + 1]) {
-        await swap(j, j + 1);
+        try {
+          await swap(j, j + 1);
+        } catch(error) {
+          console.error(error);
+        }
       }
     }
   }
