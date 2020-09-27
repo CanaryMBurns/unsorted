@@ -1,9 +1,10 @@
 <script>
 import BarChart from './BarChart.svelte'
+import Chronometer from './Chronometer.svelte'
 import { generateArrayRandomly } from '../modules/functions.mjs'
 
 // Configuration
-const setLength = 50;
+const setLength = 10;
 const setMinValue = 1;
 const setMaxValue = 100;
 const delay = 100;
@@ -46,6 +47,7 @@ async function bubbleSort () {
 </script>
 
 <main class="main">
+  <Chronometer/>
 	<BarChart {set}/>
 </main>
 
