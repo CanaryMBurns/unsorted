@@ -29,11 +29,15 @@ async function bubbleSort () {
 
   for (i = 0; i < len; i++) {
     for (j = 0, stop = len - i; j < stop; j++) {
-      if (set[j] > set[j + 1]) {
-        try {
-          await swap(j, j + 1);
-        } catch(error) {
-          console.error(error);
+      if (set[j + 1] !== undefined) {
+        if (set[j].value > set[j + 1].value) {
+          try {
+            set[j].isActive = true;
+            await swap(j, j + 1);
+            set[j + 1].isActive = false;
+          } catch(error) {
+            console.error(error);
+          }
         }
       }
     }

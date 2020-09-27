@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
 * {
 	box-sizing: border-box;
+	font-family: 'PT Mono', monospace;
 }
 
 html,

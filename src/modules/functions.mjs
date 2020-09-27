@@ -6,7 +6,10 @@ export const getRandomInt = (min, max) => {
 
 export const generateArrayRandomly = (length, min, max) => {
   return [...new Array(length)].map(() => {
-      return getRandomInt(min, max);
+      return {
+        isActive: false,
+        value: getRandomInt(min, max)
+      }
   });
 }
 
