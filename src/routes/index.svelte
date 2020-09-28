@@ -1,5 +1,5 @@
 <script>
-import Comparator from '../components/Comparator.svelte'
+import BubbleSort from '../components/BubbleSort.svelte'
 </script>
 
-<Comparator/>
+<BubbleSort/>
