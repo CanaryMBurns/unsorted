@@ -24,6 +24,7 @@ function running() {
 
 <style>
 .chronometer {
+  position: absolute;
   display: flex;
   color: whitesmoke;
 }

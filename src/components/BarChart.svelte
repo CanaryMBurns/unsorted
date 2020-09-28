@@ -7,7 +7,7 @@ let maxElementValue = Math.max.apply(Math, set.map(function(o) { return o.value;
 
 <div class="bar-chart">
   {#each set as element}
-    <div class="bar-wrapper" style="height:calc({getProportion(element.value, maxElementValue)}% + 2rem)">
+    <div class="bar-wrapper" style="height:calc({getProportion(element.value, maxElementValue)}%)">
       <div class="number">{element.value}</div>
       <div class="bar {element.isActive ? 'active' : ''}"></div>
     </div>
@@ -34,13 +34,12 @@ let maxElementValue = Math.max.apply(Math, set.map(function(o) { return o.value;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 2rem;
   color: whitesmoke;
 }
 
 .bar {
   flex: 1;
-  width: 100%;  
+  width: 100%;
   background-color: mediumseagreen;
   
 }
