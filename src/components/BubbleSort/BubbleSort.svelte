@@ -1,7 +1,7 @@
 <script>
-import BarChart from './BarChart.svelte'
-import Chronometer from './Chronometer.svelte'
-import { generateArrayRandomly } from '../modules/functions.mjs'
+import BarChart from '../BarChart/BarChart.svelte'
+import Chronometer from '../Chronometer/Chronometer.svelte'
+import { generateArrayRandomly } from '../../modules/functions.mjs'
 
 // Configuration
 const setLength = 15;

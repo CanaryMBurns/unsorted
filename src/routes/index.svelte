@@ -1,5 +1,5 @@
 <script>
-import BubbleSort from '../components/BubbleSort.svelte'
+import BubbleSort from '../components/BubbleSort/BubbleSort.svelte'
 </script>
 
 <BubbleSort/>

@@ -1,5 +1,5 @@
 <script>
-import { getProportion } from '../modules/functions.mjs'
+import { getProportion } from '../../modules/functions.mjs'
 
 export let set = [];
 let maxElementValue = Math.max.apply(Math, set.map(function(o) { return o.value; }));
