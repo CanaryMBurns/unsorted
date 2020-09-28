@@ -4,7 +4,7 @@ import Chronometer from './Chronometer.svelte'
 import { generateArrayRandomly } from '../modules/functions.mjs'
 
 // Configuration
-const setLength = 10;
+const setLength = 50;
 const setMinValue = 1;
 const setMaxValue = 100;
 const delay = 100;
