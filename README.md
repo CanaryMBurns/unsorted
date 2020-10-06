@@ -1,6 +1,6 @@
-# sapper-template
+# Unsorted
 
-The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
+Data structures and algorithms examples.
 
 
 ## Getting started
@@ -105,7 +105,9 @@ Because of that, it's essential that the bundler doesn't treat the package as an
 npm install -D @sveltejs/svelte-virtual-list
 ```
 
+## Pending tasks
 
-## Bugs and feedback
+1. Navigation
+2. Radix sort
+3. Prim
 
-Sapper is in early development, and may have the odd rough edge here and there. Please be vocal over on the [Sapper issue tracker](https://github.com/sveltejs/sapper/issues).
