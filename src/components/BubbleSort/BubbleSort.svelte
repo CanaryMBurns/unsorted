@@ -1,10 +1,10 @@
 <script>
-import BarChart from './BarChart.svelte'
-import Chronometer from './Chronometer.svelte'
-import { generateArrayRandomly } from '../modules/functions.mjs'
+import BarChart from '../BarChart/BarChart.svelte'
+import Chronometer from '../Chronometer/Chronometer.svelte'
+import { generateArrayRandomly } from '../../modules/functions.mjs'
 
 // Configuration
-const setLength = 50;
+const setLength = 15;
 const setMinValue = 1;
 const setMaxValue = 100;
 const delay = 100;
