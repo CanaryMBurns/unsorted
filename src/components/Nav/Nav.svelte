@@ -10,8 +10,9 @@
 <div class="button" on:click={onClick}>OpenMENUEEE</div>
 <div on:click={onClick}  class="backdrop {open ? 'active' : ''}"></div>
 <nav class="navigation-drawer {open ? 'open' : ''}">
-	<li><a on:click={onClick} aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-	<li><a on:click={onClick} aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
+	<li><a on:click={onClick} aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
+	<li><a on:click={onClick} aria-current="{segment === 'about' ? 'page' : undefined}" href="BubbleSortPage">Bubble sort</a></li>
+	<li><a on:click={onClick} aria-current="{segment === 'about' ? 'page' : undefined}" href="RadixSortPage">Radix sort</a></li>
 
 	<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 	  the blog data when we hover over the link or tap it on a touchscreen -->

@@ -24,7 +24,7 @@ function swap(firstIndex, secondIndex) {
   });
 }
 
-async function bubbleSort () {
+async function bubbleSort() {
   let len = set.length;
   let i, j, stop;
 
