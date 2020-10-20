@@ -110,5 +110,6 @@ npm install -D @sveltejs/svelte-virtual-list
 1. Navigation
 2. Radix sort
 3. Prim
-4. Montículos 
+4. Montículos
+5. Djsktra 
 
