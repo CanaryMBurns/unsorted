@@ -111,5 +111,6 @@ npm install -D @sveltejs/svelte-virtual-list
 2. Radix sort
 3. Prim
 4. Montículos
-5. Djsktra 
+5. Djsktra
+6. Burguer menu icon
 
