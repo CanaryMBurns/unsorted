@@ -20,6 +20,11 @@ main {
 	height: 100%;
 }
 
+main.layout {
+  width: 100vw;
+	height: 100vh;
+}
+
 .ripple {
   position: absolute;
   background: #fff;
